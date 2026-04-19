@@ -46,21 +46,21 @@ export const Experience = () => {
             return (
               <motion.div
                 key={item.org}
-                initial={{ opacity: 0, y: 30 }}
+                initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.1 }}
+                viewport={{ once: true, margin: "-60px" }}
+                transition={{ delay: i * 0.12, duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
                 className="relative pl-12 md:pl-0 mb-12 md:grid md:grid-cols-2 md:gap-12"
               >
-                {/* Dot */}
-                <span className="absolute left-4 md:left-1/2 top-2 -translate-x-1/2 h-4 w-4 rounded-full bg-primary ring-4 ring-background shadow-glow" />
+                <span className="absolute left-4 md:left-1/2 top-2 -translate-x-1/2 h-4 w-4 rounded-full bg-primary ring-4 ring-background shadow-glow z-10" />
+                <span className="absolute left-4 md:left-1/2 top-2 -translate-x-1/2 h-4 w-4 rounded-full bg-primary/40 animate-ping-soft" />
 
                 <div className={left ? "md:text-right md:pr-8" : "md:order-2 md:pl-8"}>
                   <h3 className="font-display text-xl font-bold">{item.org}</h3>
                   <p className="text-sm text-primary font-medium mt-1">{item.period}</p>
                 </div>
                 <div className={left ? "mt-3 md:mt-0 md:pl-8" : "md:order-1 mt-3 md:mt-0 md:pr-8 md:text-right"}>
-                  <div className="bg-card border rounded-2xl p-5 shadow-card hover:shadow-elegant transition-smooth">
+                  <div className="bg-card border rounded-2xl p-5 shadow-card hover:shadow-elegant hover:-translate-y-1 transition-smooth">
                     <h4 className="font-semibold">{item.role}</h4>
                     <p className="text-sm text-muted-foreground mt-2 leading-relaxed">{item.desc}</p>
                   </div>
