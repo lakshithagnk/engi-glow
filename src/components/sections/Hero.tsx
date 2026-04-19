@@ -122,7 +122,7 @@ export const Hero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.6, duration: 0.6 }}
-          className="mt-14 flex flex-wrap items-center justify-center gap-4"
+          className="mt-14 flex flex-wrap items-center justify-center gap-3"
         >
           <motion.a
             href="#projects"
@@ -131,19 +131,54 @@ export const Hero = () => {
             transition={{ type: "spring", stiffness: 400, damping: 17 }}
             className="group relative inline-flex items-center gap-2 bg-gradient-primary text-primary-foreground px-7 py-3.5 rounded-full font-medium shadow-glow overflow-hidden"
           >
-            <span className="relative z-10">View Portfolio</span>
+            <span className="relative z-10">View Projects</span>
             <ArrowRight className="h-4 w-4 relative z-10 transition-transform group-hover:translate-x-1" />
             <span className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-700 bg-gradient-to-r from-transparent via-primary-foreground/30 to-transparent" />
+          </motion.a>
+          <motion.a
+            href="/resume.pdf"
+            download
+            whileHover={{ scale: 1.04 }}
+            whileTap={{ scale: 0.97 }}
+            transition={{ type: "spring", stiffness: 400, damping: 17 }}
+            className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full font-medium border border-foreground/20 hover:border-primary hover:text-primary transition-smooth"
+          >
+            <Download className="h-4 w-4" />
+            Download Resume
           </motion.a>
           <motion.a
             href="#contact"
             whileHover={{ scale: 1.04 }}
             whileTap={{ scale: 0.97 }}
             transition={{ type: "spring", stiffness: 400, damping: 17 }}
-            className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full font-medium border border-foreground/20 hover:bg-foreground hover:text-background transition-smooth"
+            className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full font-medium bg-foreground text-background hover:opacity-90 transition-smooth"
           >
-            Hire Me
+            <Mail className="h-4 w-4" />
+            Get in Touch
           </motion.a>
+        </motion.div>
+
+        {/* Quick facts strip */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.8, duration: 0.6 }}
+          className="mt-10 flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-sm text-muted-foreground"
+        >
+          <span className="inline-flex items-center gap-2">
+            <GraduationCap className="h-4 w-4 text-primary" />
+            B.Tech EE · IIT Bombay · 2025
+          </span>
+          <span className="hidden sm:inline text-border">|</span>
+          <span className="inline-flex items-center gap-2">
+            <MapPin className="h-4 w-4 text-primary" />
+            Mumbai, India · Open to relocation
+          </span>
+          <span className="hidden sm:inline text-border">|</span>
+          <span className="inline-flex items-center gap-2">
+            <span className="h-2 w-2 rounded-full bg-emerald-500 animate-pulse" />
+            Available from May 2025
+          </span>
         </motion.div>
       </div>
     </section>
