@@ -70,6 +70,14 @@ export const Navbar = () => {
           </ul>
 
           <div className="flex items-center gap-2">
+            <a
+              href="/resume.pdf"
+              download
+              className="hidden sm:inline-flex items-center gap-2 px-4 py-2 rounded-full text-xs font-semibold bg-gradient-primary text-primary-foreground shadow-glow hover:scale-105 transition-smooth"
+            >
+              <Download className="h-3.5 w-3.5" />
+              Resume
+            </a>
             <button
               onClick={toggle}
               aria-label="Toggle theme"
