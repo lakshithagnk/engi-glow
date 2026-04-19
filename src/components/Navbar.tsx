@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Moon, Sun, Menu, X } from "lucide-react";
+import { Moon, Sun, Menu, X, Download } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useTheme } from "@/hooks/useTheme";
 import { useActiveSection } from "@/hooks/useActiveSection";
@@ -8,9 +8,9 @@ import { cn } from "@/lib/utils";
 const links = [
   { id: "home", label: "Home" },
   { id: "about", label: "About" },
-  { id: "services", label: "Services" },
-  { id: "resume", label: "Resume" },
+  { id: "skills", label: "Skills" },
   { id: "projects", label: "Projects" },
+  { id: "resume", label: "Experience" },
   { id: "contact", label: "Contact" },
 ];
 
@@ -70,6 +70,14 @@ export const Navbar = () => {
           </ul>
 
           <div className="flex items-center gap-2">
+            <a
+              href="/resume.pdf"
+              download
+              className="hidden sm:inline-flex items-center gap-2 px-4 py-2 rounded-full text-xs font-semibold bg-gradient-primary text-primary-foreground shadow-glow hover:scale-105 transition-smooth"
+            >
+              <Download className="h-3.5 w-3.5" />
+              Resume
+            </a>
             <button
               onClick={toggle}
               aria-label="Toggle theme"

@@ -68,10 +68,10 @@ export const About = () => {
             className="grid grid-cols-2 gap-5"
           >
             {[
-              { n: 15, label: "Projects Completed" },
-              { n: 20, label: "Skills & Tools" },
-              { n: 8, label: "Certifications" },
-              { n: 4, label: "Research Papers", suffix: "" },
+              { n: 15, label: "Engineering Projects" },
+              { n: 8, label: "Months of Internship" },
+              { n: 5, label: "Certifications" },
+              { n: 2, label: "Hackathons Won", suffix: "" },
             ].map((s) => (
               <div key={s.label} className="bg-card border rounded-3xl p-7 shadow-card hover:-translate-y-1 transition-smooth">
                 <div className="font-display text-4xl md:text-5xl font-extrabold text-gradient">
