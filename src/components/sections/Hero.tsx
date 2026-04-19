@@ -133,7 +133,7 @@ export const Hero = () => {
           >
             <span className="relative z-10">View Portfolio</span>
             <ArrowRight className="h-4 w-4 relative z-10 transition-transform group-hover:translate-x-1" />
-            <span className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-700 bg-gradient-to-r from-transparent via-white/30 to-transparent" />
+            <span className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-700 bg-gradient-to-r from-transparent via-primary-foreground/30 to-transparent" />
           </motion.a>
           <motion.a
             href="#contact"
