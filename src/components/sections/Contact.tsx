@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import { Github, Linkedin, Twitter, Youtube, Mail, Phone, MapPin, Send } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
+import { fadeLeft, fadeRight } from "@/lib/motion";
 
 export const Contact = () => {
   const { toast } = useToast();
@@ -14,60 +15,80 @@ export const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-24 bg-surface-dark text-surface-dark-foreground relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-glow opacity-50" />
+    <section
+      id="contact"
+      className="theme-force-dark py-28 relative overflow-hidden"
+      style={{ background: "hsl(var(--surface-dark))" }}
+    >
+      <div className="absolute inset-0 bg-gradient-glow opacity-35 pointer-events-none" />
+
       <div className="container relative">
+        {/* Header row */}
         <div className="flex flex-wrap items-center justify-between gap-6">
           <div>
-            <span className="text-xs font-semibold uppercase tracking-[0.2em] text-primary">Contact</span>
-            <h2 className="mt-3 font-display text-4xl md:text-5xl font-extrabold">Let's connect <br />and build together.</h2>
+            <span className="section-label">Contact</span>
+            <h2 className="mt-3 font-display text-4xl md:text-5xl font-extrabold text-[hsl(220_13%_91%)]">
+              Let's connect <br />and build together.
+            </h2>
           </div>
           <a
             href="mailto:arjun.mehta@example.com"
-            className="inline-flex items-center gap-2 bg-gradient-primary text-primary-foreground px-7 py-3.5 rounded-full font-medium shadow-glow hover:scale-105 transition-smooth"
+            className="inline-flex items-center gap-2 bg-gradient-primary text-white px-7 py-3.5 rounded-full font-semibold shadow-glow hover:scale-105 transition-smooth text-sm"
           >
             Hire Me →
           </a>
         </div>
 
         <div className="mt-14 grid lg:grid-cols-2 gap-10">
+          {/* Contact info */}
           <motion.div
-            initial={{ opacity: 0, x: -20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            className="space-y-5"
+            variants={fadeLeft}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: false }}
+            className="space-y-4"
           >
             {[
-              { icon: Mail, label: "Email", value: "arjun.mehta@example.com" },
-              { icon: Phone, label: "Phone", value: "+91 98765 43210" },
+              { icon: Mail,   label: "Email",    value: "arjun.mehta@example.com" },
+              { icon: Phone,  label: "Phone",    value: "+91 98765 43210" },
               { icon: MapPin, label: "Location", value: "Mumbai, India" },
             ].map((c) => (
-              <div key={c.label} className="flex items-center gap-4 glass-dark rounded-2xl p-5">
-                <div className="h-12 w-12 rounded-xl bg-gradient-primary grid place-items-center">
+              <div
+                key={c.label}
+                className="flex items-center gap-4 bg-white/[0.04] border border-white/[0.08] rounded-2xl p-5 hover:border-primary/22 transition-smooth"
+              >
+                <div className="h-11 w-11 rounded-xl bg-gradient-primary grid place-items-center shrink-0 shadow-glow">
                   <c.icon className="h-5 w-5 text-white" />
                 </div>
                 <div>
-                  <p className="text-xs text-white/60">{c.label}</p>
-                  <p className="font-medium">{c.value}</p>
+                  <p className="text-xs text-[hsl(218_11%_65%)]">{c.label}</p>
+                  <p className="font-medium text-[hsl(220_13%_91%)] text-sm mt-0.5">{c.value}</p>
                 </div>
               </div>
             ))}
 
+            {/* Social links */}
             <div className="flex items-center gap-3 pt-2">
               {[Github, Linkedin, Twitter, Youtube].map((Icon, i) => (
-                <a key={i} href="#" className="h-11 w-11 rounded-full bg-white/10 grid place-items-center hover:bg-primary transition-smooth">
+                <a
+                  key={i}
+                  href="#"
+                  className="h-11 w-11 rounded-full bg-white/[0.06] border border-white/[0.08] grid place-items-center text-[hsl(218_11%_65%)] hover:bg-primary hover:text-white hover:border-primary transition-smooth"
+                >
                   <Icon className="h-4 w-4" />
                 </a>
               ))}
             </div>
           </motion.div>
 
+          {/* Contact form */}
           <motion.form
-            initial={{ opacity: 0, x: 20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
+            variants={fadeRight}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: false }}
             onSubmit={submit}
-            className="glass-dark rounded-3xl p-7 space-y-4"
+            className="bg-white/[0.03] border border-white/[0.08] rounded-2xl p-7 space-y-4"
           >
             <div className="grid sm:grid-cols-2 gap-4">
               <input
@@ -75,7 +96,7 @@ export const Contact = () => {
                 placeholder="Your Name"
                 value={form.name}
                 onChange={(e) => setForm({ ...form, name: e.target.value })}
-                className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-sm placeholder:text-white/40 focus:border-primary focus:outline-none transition-smooth"
+                className="w-full bg-white/[0.05] border border-white/[0.08] rounded-xl px-4 py-3 text-sm text-[hsl(220_13%_91%)] placeholder:text-[hsl(218_11%_42%)] focus:border-primary/50 focus:outline-none transition-smooth"
               />
               <input
                 required
@@ -83,7 +104,7 @@ export const Contact = () => {
                 placeholder="Email Address"
                 value={form.email}
                 onChange={(e) => setForm({ ...form, email: e.target.value })}
-                className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-sm placeholder:text-white/40 focus:border-primary focus:outline-none transition-smooth"
+                className="w-full bg-white/[0.05] border border-white/[0.08] rounded-xl px-4 py-3 text-sm text-[hsl(220_13%_91%)] placeholder:text-[hsl(218_11%_42%)] focus:border-primary/50 focus:outline-none transition-smooth"
               />
             </div>
             <textarea
@@ -92,11 +113,11 @@ export const Contact = () => {
               placeholder="Tell me about your project..."
               value={form.message}
               onChange={(e) => setForm({ ...form, message: e.target.value })}
-              className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-sm placeholder:text-white/40 focus:border-primary focus:outline-none transition-smooth resize-none"
+              className="w-full bg-white/[0.05] border border-white/[0.08] rounded-xl px-4 py-3 text-sm text-[hsl(220_13%_91%)] placeholder:text-[hsl(218_11%_42%)] focus:border-primary/50 focus:outline-none transition-smooth resize-none"
             />
             <button
               type="submit"
-              className="w-full inline-flex items-center justify-center gap-2 bg-gradient-primary text-primary-foreground px-6 py-3.5 rounded-xl font-medium shadow-glow hover:scale-[1.02] transition-smooth"
+              className="w-full inline-flex items-center justify-center gap-2 bg-gradient-primary text-white px-6 py-3.5 rounded-xl font-semibold shadow-glow hover:scale-[1.02] transition-smooth text-sm"
             >
               Send Message <Send className="h-4 w-4" />
             </button>
