@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowRight, Star, Sparkles } from "lucide-react";
+import { ArrowRight, Star, Sparkles, Download, MapPin, GraduationCap, Mail } from "lucide-react";
 import heroPortrait from "@/assets/hero-portrait.jpg";
 import { fadeUp, stagger, viewportOnce } from "@/lib/motion";
 
