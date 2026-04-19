@@ -41,10 +41,10 @@ export const Hero = () => {
             variants={fadeUp}
             className="mt-6 text-base md:text-lg text-muted-foreground max-w-2xl mx-auto"
           >
-            Final Year Electrical Engineering Undergraduate — passionate about
+            Final-year Electrical Engineering undergraduate at IIT Bombay, building production-grade systems across
             <span className="text-foreground font-semibold"> Automation</span>,
             <span className="text-foreground font-semibold"> Renewable Energy</span> &
-            <span className="text-foreground font-semibold"> Machine Learning</span>.
+            <span className="text-foreground font-semibold"> Machine Learning</span>. Looking for full-time graduate roles starting May 2025.
           </motion.p>
         </motion.div>
 
