@@ -44,8 +44,8 @@ export const Navbar = () => {
         >
           {/* Logo */}
           <a href="#home" className="font-display font-extrabold text-xl">
-            <span className="text-gradient">A</span>
-            <span className="text-foreground">rjun</span>
+            <span className="text-gradient">L</span>
+            <span className="text-foreground">akshitha</span>
             <span className="text-primary">.</span>
           </a>
 

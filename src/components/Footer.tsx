@@ -8,13 +8,13 @@ export const Footer = () => {
         {/* Brand */}
         <div>
           <h3 className="font-display text-2xl font-extrabold">
-            <span className="text-gradient">A</span>
-            <span className="text-[hsl(220_13%_91%)]">rjun</span>
+            <span className="text-gradient">L</span>
+            <span className="text-[hsl(220_13%_91%)]">akshitha</span>
             <span className="text-primary">.</span>
           </h3>
           <p className="mt-4 text-sm text-[hsl(218_11%_55%)] leading-relaxed">
-            Final-year Electrical Engineering student building automation, renewable, and
-            ML-driven systems.
+            Electrical Engineering undergraduate specializing in power systems, renewable energy,
+            and ML-driven solutions.
           </p>
         </div>
 
@@ -39,9 +39,9 @@ export const Footer = () => {
         <div>
           <h4 className="font-semibold text-[hsl(220_13%_91%)] text-sm mb-4">Contact</h4>
           <ul className="space-y-2.5 text-sm text-[hsl(218_11%_55%)]">
-            <li>+91 98765 43210</li>
-            <li>arjun.mehta@example.com</li>
-            <li>Mumbai, India</li>
+            <li>+94 70 108 4049</li>
+            <li>gnklakshitha@gmail.com</li>
+            <li>Colombo, Sri Lanka</li>
           </ul>
         </div>
 
@@ -64,8 +64,8 @@ export const Footer = () => {
       {/* Bottom bar */}
       <div className="border-t border-white/[0.07]">
         <div className="container py-5 flex flex-col md:flex-row justify-between gap-2 text-xs text-[hsl(218_11%_45%)]">
-          <p>© {new Date().getFullYear()} Arjun Mehta. All rights reserved.</p>
-          <p>Built with React, Tailwind &amp; Framer Motion.</p>
+          <p>© {new Date().getFullYear()} Lakshitha. All rights reserved.</p>
+          
         </div>
       </div>
     </footer>

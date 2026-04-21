@@ -5,21 +5,21 @@ import { fadeUp, viewportOnce } from "@/lib/motion";
 
 const testimonials = [
   {
-    name: "Dr. Priya Iyer",
-    role: "Professor, IIT Bombay",
-    quote: "Arjun's research instincts are sharp. His MPPT controller exceeded our lab benchmarks and showed industry-grade engineering rigor.",
+    name: "Dr. V. Logeeshan",
+    role: "Senior Lecturer, Dept. of Electrical Engineering, University of Moratuwa",
+    quote: "Nuwan demonstrates exceptional analytical skills and a strong commitment to engineering excellence. His TinyML FYP work showed impressive depth in both hardware and software domains.",
     rating: 5,
   },
   {
-    name: "Rahul Verma",
-    role: "Engineer, Tata Power",
-    quote: "During his internship, Arjun shipped working SCADA logic in weeks. He asks the right questions and writes clean, documented code.",
+    name: "Dr. Thushara Rathnayaka",
+    role: "Senior Lecturer, Dept. of Electrical Engineering, University of Moratuwa",
+    quote: "A dedicated and well-rounded student with a solid foundation in power systems and a keen interest in cutting-edge technologies. Nuwan's work ethic is exemplary.",
     rating: 5,
   },
   {
-    name: "Sneha Patil",
-    role: "Robotics Club Lead",
-    quote: "Reliable, calm under deadline pressure, and exceptional with power electronics. Our robot wouldn't have placed without him.",
+    name: "IEEE PES Student Branch",
+    role: "University of Moratuwa",
+    quote: "As Design Team Lead for our SolidWorks Workshop and an active design committee member, Nuwan brought creativity and professionalism to every project he undertook.",
     rating: 5,
   },
 ];

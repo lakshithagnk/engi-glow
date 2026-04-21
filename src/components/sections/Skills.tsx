@@ -5,33 +5,33 @@ import { fadeUp, stagger, viewportOnce } from "@/lib/motion";
 const groups = [
   {
     icon: Zap,
-    title: "Power & Control",
-    items: ["MATLAB / Simulink", "PSpice", "Power Electronics", "Protection Systems", "MPPT Controllers"],
+    title: "Power & Energy",
+    items: ["PSCAD", "PSS®E", "MATLAB", "Simulink"],
   },
   {
     icon: Cpu,
     title: "Automation",
-    items: ["Siemens PLC", "TIA Portal", "Ladder Logic", "SCADA / HMI", "Modbus / OPC-UA"],
+    items: ["LabVIEW", "Factory I/O", "LADSIM","PLC ladder logic"],
   },
   {
     icon: Wrench,
     title: "Embedded & IoT",
-    items: ["ESP32", "STM32", "Arduino", "C / C++", "MQTT", "FreeRTOS"],
+    items: ["ESP32", "Arduino", "PlatformIO", "Node-RED"],
   },
   {
     icon: BrainCircuit,
     title: "Machine Learning",
-    items: ["Python", "TensorFlow", "PyTorch", "scikit-learn", "Time-Series"],
+    items: ["Python", "PyTorch", "TensorFlow Lite", "TinyML"],
   },
   {
     icon: Layers,
-    title: "Design & EDA",
-    items: ["KiCad", "Altium", "AutoCAD Electrical", "LTspice"],
+    title: "Design Tools",
+    items: ["SolidWorks", "Photoshop", "Illustrator", "Canva"],
   },
   {
     icon: Code2,
-    title: "Tools & Workflow",
-    items: ["Git / GitHub", "Linux", "Docker", "VS Code", "Figma"],
+    title: "Web & Software",
+    items: ["Java", "Spring Boot", "React.js", "MongoDB", "GitHub"],
   },
 ];
 
@@ -40,13 +40,12 @@ export const Skills = () => {
     <section id="skills" className="py-28">
       <div className="container">
         <div className="text-center max-w-2xl mx-auto">
-          <span className="section-label">Tech Stack</span>
+          <span className="section-label">Skills</span>
           <h2 className="mt-3 font-display text-4xl md:text-5xl font-extrabold">
-            Skills recruiters can <span className="text-gradient">scan in seconds</span>
+            Technologies I <span className="text-gradient">work with</span>
           </h2>
           <p className="mt-4 text-muted-foreground leading-relaxed">
-            A practical mix of hardware, firmware, and software — grouped the way engineering
-            teams actually work.
+            From embedded firmware to web applications — tools I've used in real projects.
           </p>
         </div>
 

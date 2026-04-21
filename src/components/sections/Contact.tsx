@@ -24,18 +24,21 @@ export const Contact = () => {
 
       <div className="container relative">
         {/* Header row */}
-        <div className="flex flex-wrap items-center justify-between gap-6">
-          <div>
+        <div className="flex flex-wrap items-start justify-between gap-6">
+          <div className="max-w-xl">
             <span className="section-label">Contact</span>
             <h2 className="mt-3 font-display text-4xl md:text-5xl font-extrabold text-[hsl(220_13%_91%)]">
-              Let's connect <br />and build together.
+              Get in touch.
             </h2>
+            <p className="mt-4 text-[hsl(218_11%_65%)] leading-relaxed">
+              Open to internships, collaborations, and research opportunities. I'll get back to you within 24 hours.
+            </p>
           </div>
           <a
-            href="mailto:arjun.mehta@example.com"
-            className="inline-flex items-center gap-2 bg-gradient-primary text-white px-7 py-3.5 rounded-full font-semibold shadow-glow hover:scale-105 transition-smooth text-sm"
+            href="mailto:gnklakshitha@gmail.com"
+            className="inline-flex items-center gap-2 bg-gradient-primary text-white px-7 py-3.5 rounded-full font-semibold shadow-glow hover:scale-105 transition-smooth text-sm shrink-0"
           >
-            Hire Me →
+            Send an Email →
           </a>
         </div>
 
@@ -49,9 +52,9 @@ export const Contact = () => {
             className="space-y-4"
           >
             {[
-              { icon: Mail,   label: "Email",    value: "arjun.mehta@example.com" },
-              { icon: Phone,  label: "Phone",    value: "+91 98765 43210" },
-              { icon: MapPin, label: "Location", value: "Mumbai, India" },
+              { icon: Mail,   label: "Email",    value: "gnklakshitha@gmail.com" },
+              { icon: Phone,  label: "Phone",    value: "+94 70 108 4049" },
+              { icon: MapPin, label: "Location", value: "Mattegoda, Sri Lanka" },
             ].map((c) => (
               <div
                 key={c.label}
@@ -69,10 +72,18 @@ export const Contact = () => {
 
             {/* Social links */}
             <div className="flex items-center gap-3 pt-2">
-              {[Github, Linkedin, Twitter, Youtube].map((Icon, i) => (
+              {[
+                { icon: Github, label: "GitHub", href: "https://github.com/lakshithagnk?tab=repositories" },
+                { icon: Linkedin, label: "LinkedIn", href: "https://linkedin.com/in/nuwan-lakshitha-b4b781283" },
+                { icon: Twitter, label: "Twitter", href: "https://x.com" },
+                { icon: Youtube, label: "YouTube", href: "https://www.youtube.com" },
+              ].map(({ icon: Icon, label, href }, i) => (
                 <a
                   key={i}
-                  href="#"
+                  href={href}
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label={label}
                   className="h-11 w-11 rounded-full bg-white/[0.06] border border-white/[0.08] grid place-items-center text-[hsl(218_11%_65%)] hover:bg-primary hover:text-white hover:border-primary transition-smooth"
                 >
                   <Icon className="h-4 w-4" />

@@ -21,17 +21,17 @@ const Counter = ({ to, suffix = "+" }: { to: number; suffix?: string }) => {
 };
 
 const strengths = [
-  "Strong analytical & problem-solving mindset",
-  "End-to-end engineering design experience",
-  "Adaptable across hardware, firmware & software",
-  "Team player with leadership in technical clubs",
+  "Analytical thinker with a practical approach to solving complex engineering problems",
+  "Experience in power systems and electrical installations",
+  "Experienced in translating concepts into functional systems and implementations",
+  "Comfortable working across hardware, embedded systems, and software domains",
 ];
 
 const stats = [
-  { n: 15, label: "Engineering Projects" },
-  { n: 8,  label: "Months of Internship" },
-  { n: 5,  label: "Certifications" },
-  { n: 2,  label: "Hackathons Won", suffix: "" },
+  { n: 5, label: "Academic Projects" },
+  { n: 6, label: "Months of Internship" },
+  { n: 5, label: "Certifications" },
+  { n: 4, label: "Volunteer Roles", suffix: "" },
 ];
 
 export const About = () => {
@@ -48,12 +48,13 @@ export const About = () => {
           >
             <span className="section-label">Why Hire Me?</span>
             <h2 className="mt-3 font-display text-4xl md:text-5xl font-extrabold">
-              Engineering <span className="text-gradient">that ships</span>, not just slides.
+            Engineering  <span className="text-gradient">that works</span>, not just on paper.
             </h2>
             <p className="mt-5 text-muted-foreground leading-relaxed">
-              I combine fundamentals from electrical engineering with modern tooling — embedded
-              firmware, ML, and cloud — to build complete systems that solve real problems on the
-              bench and on the grid.
+              I am an Electrical Engineering undergraduate specializing in power systems and electrical installation. 
+              I am interested in managing challenges related to renewable energy integration and improving grid 
+              stability, with a solid foundation in power system analysis. I seek opportunities to apply 
+              my technical knowledge to deliver efficient engineering solutions.            
             </p>
 
             <ul className="mt-7 space-y-3.5">
@@ -69,7 +70,7 @@ export const About = () => {
               href="#contact"
               className="inline-flex mt-9 items-center gap-2 px-7 py-3 rounded-full border border-border hover:border-primary/40 hover:text-primary text-muted-foreground transition-smooth font-medium text-sm"
             >
-              Hire Me →
+              Contract Me →
             </a>
           </motion.div>
 

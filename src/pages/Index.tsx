@@ -6,8 +6,8 @@ import { Skills } from "@/components/sections/Skills";
 import { Experience } from "@/components/sections/Experience";
 import { Education } from "@/components/sections/Education";
 import { Projects } from "@/components/sections/Projects";
-import { Testimonials } from "@/components/sections/Testimonials";
-import { Blog } from "@/components/sections/Blog";
+// import { Testimonials } from "@/components/sections/Testimonials";
+// import { Blog } from "@/components/sections/Blog";
 import { Contact } from "@/components/sections/Contact";
 import { Footer } from "@/components/Footer";
 import { ScrollProgress } from "@/components/ScrollProgress";
@@ -25,8 +25,8 @@ const Index = () => {
         <Experience />
         <Education />
         <Services />
-        <Testimonials />
-        <Blog />
+        {/* <Testimonials /> */}
+        {/* <Blog /> */}
         <Contact />
       </main>
       <Footer />

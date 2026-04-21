@@ -9,44 +9,53 @@ import ml from "@/assets/project-ml.jpg";
 
 const projects = [
   {
-    title: "Smart Factory Automation",
-    desc: "PLC + SCADA system for a conveyor sorting line with real-time HMI dashboards and OEE tracking.",
+    title: "TinyML Li-Ion Battery Fault Detection",
+    desc: "Microcontroller-based anomaly detection system for Li-ion battery packs using TinyML. Deployed a lightweight Multi-Scale CNN on an ESP32 for real-time on-device fault classification with low latency.",
+    img: ml,
+    tags: ["Python", "PyTorch", "TensorFlow Lite", "ESP32"],
+    github: "#",
+    demo: "#",
+    category: "Machine Learning",
+  },
+  {
+    title: "Maze Solving & Line Following Robot",
+    desc: "Autonomous robot solving two connected mazes with line following. Integrated ultrasonic sensors for wall detection and an IR sensor array for accurate navigation using shortest path algorithms.",
     img: automation,
-    tags: ["PLC", "SCADA", "TIA Portal"],
+    tags: ["Arduino Mega", "C/C++", "Ultrasonic Sensors", "IR Array"],
     github: "#",
     demo: "#",
     category: "Automation",
   },
   {
-    title: "Hybrid Solar–Wind MPPT",
-    desc: "Microcontroller-based hybrid MPPT controller boosting energy capture by 18% in lab tests.",
-    img: solar,
-    tags: ["Power", "STM32", "MATLAB"],
+    title: "Intelligent Street Lighting & Railway Gate",
+    desc: "Automated system controlling street lighting and railway gates based on vehicle and train detection, improving safety and reducing energy consumption using LabVIEW and NIDAQmx.",
+    img: iot,
+    tags: ["LabVIEW", "NIDAQmx", "IR Sensor", "LDR"],
     github: "#",
     demo: "#",
-    category: "Power Systems",
+    category: "Automation",
   },
   {
-    title: "IoT Energy Monitor",
-    desc: "ESP32 device streaming live load data to a web dashboard with anomaly detection alerts.",
-    img: iot,
-    tags: ["ESP32", "MQTT", "React"],
+    title: "Smart MediBox",
+    desc: "Smart medication box providing timely reminders and monitoring temperature and humidity for proper medicine storage, with a real-time dashboard built in Node-RED.",
+    img: solar,
+    tags: ["Wokwi", "Node-RED", "IoT"],
     github: "#",
     demo: "#",
     category: "Embedded",
   },
   {
-    title: "Fault Prediction with ML",
-    desc: "LSTM model predicting transformer faults from vibration & thermal sensor time-series.",
-    img: ml,
-    tags: ["Python", "TensorFlow", "Time Series"],
+    title: "HR Subsystem Web Application",
+    desc: "Full-stack web application for HR and business process management in an electronics manufacturing company. Built with Spring Boot backend and React.js frontend connected to MongoDB.",
+    img: automation,
+    tags: ["Java", "Spring Boot", "React.js", "MongoDB"],
     github: "#",
     demo: "#",
-    category: "Machine Learning",
+    category: "Web Dev",
   },
 ];
 
-const categories = ["All", "Automation", "Power Systems", "Embedded", "Machine Learning"];
+const categories = ["All", "Machine Learning", "Automation", "Embedded", "Web Dev"];
 
 export const Projects = () => {
   const [filter, setFilter] = useState("All");
@@ -57,12 +66,13 @@ export const Projects = () => {
       <div className="container">
         {/* Section header */}
         <div className="text-center max-w-2xl mx-auto">
-          <span className="section-label">Portfolio</span>
+          <span className="section-label">Projects</span>
           <h2 className="mt-3 font-display text-4xl md:text-5xl font-extrabold">
-            Let's have a look at{" "}
-            <br className="hidden md:block" />
-            my recent <span className="text-gradient">work</span>
+            Things I've <span className="text-gradient">built</span>
           </h2>
+          <p className="mt-4 text-muted-foreground leading-relaxed">
+            A selection of projects across embedded systems, power engineering, and software.
+          </p>
         </div>
 
         {/* Filter chips */}
@@ -147,26 +157,6 @@ export const Projects = () => {
             ))}
           </AnimatePresence>
         </motion.div>
-
-        {/* Marquee strip */}
-        <div className="mt-16 bg-gradient-primary rounded-full overflow-hidden py-3.5">
-          <div className="marquee flex gap-10 whitespace-nowrap text-white font-display font-semibold text-sm">
-            {Array.from({ length: 2 }).map((_, k) => (
-              <div key={k} className="flex gap-10 px-5">
-                {[
-                  "- Robotics & Automation     -",
-                  "- Power Systems     -",
-                  "- Embedded & IoT     -",
-                  "- Machine Learning     -",
-                  "- Renewable Energy     -",
-                  "- Electrical Installation     -",
-                ].map((t) => (
-                  <span key={t}>{t}</span>
-                ))}
-              </div>
-            ))}
-          </div>
-        </div>
       </div>
     </section>
   );

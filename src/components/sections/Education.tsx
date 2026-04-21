@@ -4,25 +4,31 @@ import { fadeUp, stagger, viewportOnce } from "@/lib/motion";
 
 const education = [
   {
-    school: "Indian Institute of Technology, Bombay",
-    degree: "B.Tech, Electrical Engineering",
-    period: "2021 – 2025 (Final Year)",
-    detail: "CGPA 8.7 / 10 · Coursework: Power Systems, Control Theory, Signals, Embedded Systems, ML.",
+    school: "University of Moratuwa",
+    degree: "Bachelor of Science in Engineering ",
+    period: "May 2022 – Present",
+    detail: "Specialization in Electrical Engineering.",
   },
   {
-    school: "Delhi Public School, R.K. Puram",
-    degree: "Higher Secondary (PCM + CS)",
-    period: "2019 – 2021",
-    detail: "95.2% · School topper in Physics; led the robotics club to a national finalist position.",
+    school: "Thurstain College, Colombo-07",
+    degree: "G.C.E A/L — Physical Science",
+    period: "2017 – 2019",
+    detail: "3 A's · Physical Science stream.",
+  },
+  {
+    school: "St John's College, Nugegoda",
+    degree: "G.C.E O/L",
+    period: "2006 – 2016",
+    detail: "8 A's · Primary and secondary education.",
   },
 ];
 
 const certifications = [
-  "Siemens PLC & TIA Portal — Industrial Automation",
-  "DeepLearning.AI — Machine Learning Specialization",
-  "NPTEL — Power System Analysis (Elite + Gold)",
-  "AWS Cloud Practitioner",
-  "MATLAB Onramp & Simulink Onramp",
+  "Graphic Designing — NVQ Level 3",
+  "Computer Hardware and Networking — NVQ Level 3",
+  "Generative AI with Large Language Models — DeepLearning.AI",
+  "Python Programming",
+  "Front End Web Development",
 ];
 
 export const Education = () => {

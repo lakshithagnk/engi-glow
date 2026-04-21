@@ -2,28 +2,22 @@ import { motion } from "framer-motion";
 
 const items = [
   {
-    org: "Tata Power, Mumbai",
-    period: "May 2024 – Aug 2024",
-    role: "Power Systems Intern",
-    desc: "Worked on substation automation, conducted load flow studies, and assisted in commissioning a 33 kV feeder protection scheme.",
+    org: "IPD Colombo (pvt) Ltd",
+    period: "Mar 2025 – Jun 2025",
+    role: "Intern Electrical Engineer",
+    desc: "Analyzed industrial electrical panel boards including contactors, circuit breakers, protection relays, and control devices. Studied control panel design aspects including component selection, safety mechanisms, wiring layouts, and compliance with electrical standards.",
   },
   {
-    org: "Siemens Industrial Training",
-    period: "Jan 2024 – Apr 2024",
-    role: "Automation Trainee",
-    desc: "Hands-on training with SIMATIC S7-1200 PLCs, TIA Portal, and industrial HMI design for a conveyor sorting application.",
+    org: "Ceylon Electricity Board",
+    period: "Dec 2024 – Feb 2025",
+    role: "Intern Electrical Engineer",
+    desc: "Studied power generation through site visits to Upper Kotmale Hydropower Plant and Lakvijaya Coal Power Plant. Learned high voltage transmission systems, switchyard operations, and the Colombo underground distribution network.",
   },
-  {
-    org: "IIT Bombay – Renewable Lab",
-    period: "Jun 2023 – Dec 2023",
-    role: "Research Assistant",
-    desc: "Built a hybrid MPPT controller for a 1 kW solar–wind setup; co-authored a paper on neural-network-based fault prediction.",
-  },
-  {
-    org: "University Robotics Club",
-    period: "2022 – Present",
-    role: "Lead Electrical Engineer",
-    desc: "Designed power distribution and motor-control systems for autonomous robots competing at national level.",
+    {
+    org: "University of Moratuwa",
+    period: "May2022- Present",
+    role: "Electrical Engineering Undergraduate",
+    desc: "Pursuing a B.Sc. in Electrical Engineering with a focus on power systems and electrical installations. Completed coursework in power system analysis, electrical machines, control systems, and renewable energy. ",
   },
 ];
 

@@ -67,7 +67,7 @@ export const Blog = () => {
                   <span className="px-2.5 py-0.5 rounded-full bg-primary/10 text-primary font-semibold border border-primary/15">
                     {p.tag}
                   </span>
-                  <span className="text-muted-foreground">Arjun M. · {p.date}</span>
+                  <span className="text-muted-foreground">Nuwan L. · {p.date}</span>
                 </div>
                 <h3 className="mt-3 font-display text-sm font-bold leading-snug group-hover:text-primary transition-smooth line-clamp-2">
                   {p.title}

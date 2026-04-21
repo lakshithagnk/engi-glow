@@ -42,13 +42,12 @@ export const Services = () => {
       <div className="container relative">
         {/* Header */}
         <div className="max-w-2xl">
-          <span className="section-label">My Services</span>
+          <span className="section-label">Services</span>
           <h2 className="mt-3 font-display text-4xl md:text-5xl font-extrabold text-[hsl(220_13%_91%)]">
-            Engineering services <br />I deliver with precision.
+            What I can <br />do for you.
           </h2>
           <p className="mt-4 text-[hsl(218_11%_65%)] max-w-xl leading-relaxed">
-            From shop-floor automation to clean-energy intelligence — building practical engineering
-            systems that work in the real world.
+            Spanning automation, power systems, embedded hardware, and machine learning — applied engineering across the full stack.
           </p>
         </div>
 
