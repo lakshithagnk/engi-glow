@@ -1917,6 +1917,7 @@ var require_react_development = __commonJS({
 // node_modules/react/index.js
 var require_react = __commonJS({
   "node_modules/react/index.js"(exports, module) {
+    "use strict";
     if (false) {
       module.exports = null;
     } else {
@@ -1948,4 +1949,4 @@ react/cjs/react.development.js:
    * LICENSE file in the root directory of this source tree.
    *)
 */
-//# sourceMappingURL=chunk-TJW4JA7A.js.map
+//# sourceMappingURL=chunk-MRF63CFJ.js.map
