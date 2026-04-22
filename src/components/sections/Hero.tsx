@@ -76,7 +76,7 @@ export const Hero = () => {
               </motion.a>
 
               <motion.a
-                href="/resume.pdf"
+                href={`${import.meta.env.BASE_URL}resume.pdf`}
                 download
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.97 }}
